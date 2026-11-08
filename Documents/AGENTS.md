@@ -1,0 +1,1 @@
+# Projekti reeglid kõigile AI-tööriistadele
