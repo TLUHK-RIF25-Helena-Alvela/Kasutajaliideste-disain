@@ -23,7 +23,7 @@ Minu olulisemad põhimõtted praegu, tähtsuse järjekorras. Uuenda seda loetelu
 
 ---
 
-## Seminar 1 – esimene vastus
+## Seminar 1 ja 2 – esimene vastus
 
 Kirjutatud seminari alguses, enne arutelu.
 
@@ -34,19 +34,28 @@ Kirjutatud seminari alguses, enne arutelu.
 Kasutajaliides võiks olla küllaltki intuitiivne ja lihtne, ootuspärane. Pole vaja ajada asja "ägedaks" ja "eriliseks", kui see teeb kasutamise keeruliseks.
 Probleem tuleb defineerida täpselt ja sellest lähtuda.
 
-## Seminar 1 – pärast tunniplaani analüüsi ja kodutööd
+## Seminar 3 – pärast tunniplaani analüüsi ja kodutööd
 
-| Mis on oluline | Miks | Kust see tuli                             |
-| -------------- | ---- | ----------------------------------------- |
-|                |      | seminar / kodutöö / allikas / oma kogemus |
-
-<!-- Järgmiste seminaride jaoks kopeeri sama tabel ja lisa veerg
-     "Kus see minu lahenduses näha on", kui sul on juba lahendus olemas. -->
-
----
+| Mis on oluline                             | Miks                                                                                                                                    | Kust see tuli                             |
+| ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| Probleemi defineerimine on ülimalt oluline | Enne disaini on vaja teada kes kasutab ja mida ta teha tahab                                                                            | seminar                                   |
+| Kujunduse otsused tuleb põhjendada         | Värvid jm ei ole maitse küsimus, vaid peavad toetama kasutaja eesmärke ning arvestama org visuaalidega, sobivusega ja ligipääsetavusega | seminar / kodutöö / allikas / oma kogemus |
+| Kasutajate vajaduste mõistmine             | Kujundus ja disain peavad lähtuma sellest, kes asja kasutab, mida ta teeb ja mis olukorras.                                             | seminar / kodutöö / oma kogemus           |
+| Järjepidevus                               | Et kirjastiilid, värvid jms moodustaksid terviku ja ppüsiksid asja arenedes samad.                                                      | kodutöö / oma kogemus                     |
+|                                            |                                                                                                                                         | kodutöö / oma kogemus                     |
+| --------------                             | ----                                                                                                                                    | ----------------------------------------- |
+|                                            |                                                                                                                                         | seminar / kodutöö / allikas / oma kogemus |
+| --------------                             | ----                                                                                                                                    | ----------------------------------------- |
+|                                            |                                                                                                                                         | seminar / kodutöö / allikas / oma kogemus |
 
 ## Mis muutus
 
-| Millal | Mis muutus | Miks |
-| ------ | ---------- | ---- |
-|        |            |      |
+| Millal   | Mis muutus                            | Miks                                                                                                                      |
+| -------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| KOdutöös | Mida tähendab kasutaja jaoks lihtsus? | See ei pruugi olla ainult vähe elemente ja minimalistlik. Loogiline paigutus ja tegevuste arusaadavus on veel olulisemad. |
+|          |                                       |                                                                                                                           |
+|          |                                       |                                                                                                                           |
+|          |                                       |                                                                                                                           |
+|          |                                       |                                                                                                                           |
+|          |                                       |                                                                                                                           |
+|          |                                       |                                                                                                                           |
