@@ -2,6 +2,8 @@
 
 Praegune kolledži tunniplaan koondab õppetöö ühes kohas, aga kasutaja kogemus on kehv. Olemasolev lahendus võimaldab vaadata tunniplaani päeva, nädala ja kuu kaupa ning otsida infot kursuse, aine ja õppejõu järgi.
 
+[Tunniplaani link](https://start.hk.tlu.ee/sahtelbeta/tunniplaan/index.php)
+
 - **Mis töötab:** Info on olemas (ruumid, õppejõud, kellaajad, aine nimetused). Olemas on erinevad ajavaated ja otsingufilter.
 - **Mis on segane:** Visuaalse hierarhia puudumine ei toeta info lihtsat leidimst, mobiilivaate puhul võib info rohkus ja paigutus muuta ebamugavaks. Palju tühja ruumi, samas tekst on väike ja osa lisainfost ja lühendite selgitustest ei ole esmapilgul nähtavad.
 - **Mis puudub:** Selge "täna ja praegu" fookus, mis tõstaks käimasoleva või järgmise loengu koheselt esile.
@@ -44,6 +46,23 @@ Praegune kolledži tunniplaan koondab õppetöö ühes kohas, aga kasutaja kogem
 5. Kui mugav on tunniplaani kasutada telefonis?
 6. Kas kõiki funktsioone saab kasutada klaviatuuriga?
 7. Kas kasutaja näeb arusaadavalt, millised filtrid on kasutusel.
+
+**Lähteülesanne lühidalt:**
+Projekt: TLÜ Haapsalu kolledži olemasoleva tunniplaani kasutajaliidese parandamine.
+
+Probleem: tunniplaanis on vajalik info olemas, kuid selle leidmist raskendavad info rohkus ja ebaselge visuaalne hierarhia. Mobiilis kasutamine võib olla ebamugav.
+
+Põhisihtrühm: üliõpilased.
+
+Peamine kasutusjuht: üliõpilane soovib kiiresti kontrollida, millal toimub tema järgmine tund, mis ainega on tegemist ja millises ruumis see toimub.
+
+Kasutuskeskkond: eelkõige mobiiltelefon, aga lahendus peab toimima ka arvutis.
+
+Kujunduse eesmärk: muuta tunniplaan selgemaks, kiiremini haaratavaks ja lihtsamini kasutatavaks.
+
+Piirangud: eestikeelne kasutajaliides, TLÜ visuaalse identiteedi järgimine ning ligipääsetavuse põhimõtted.
+
+Loome valitud suunal 12. novembri RIF2 õppekava tunniplaani päevavaate.
 
 ---
 
