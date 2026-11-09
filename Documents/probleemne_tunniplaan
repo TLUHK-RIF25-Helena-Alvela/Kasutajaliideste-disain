@@ -136,3 +136,17 @@ Kokkuvõttes on kõige rohkem probleeme heuristikaga 4 (järjepidevus ja standar
 Ligipääsetavuse punktid (12, 16, 17) sobivad Nielseni raamistikku ainult heuristika 4 kaudu. Kui see on aruande jaoks, tasub need lisaks siduda konkreetsete WCAG kriteeriumidega, näiteks 1.1.1, 1.3.1 ja 4.1.2.
 
 Prioriteedid: Filtrid korda
+
+Projekt: TLÜ Haapsalu kolledži olemasoleva tunniplaani kasutajaliidese parandamine.
+
+Probleem: tunniplaanis on vajalik info olemas, kuid selle leidmist raskendavad info rohkus ja ebaselge visuaalne hierarhia. Mobiilis kasutamine võib olla ebamugav.
+
+Põhisihtrühm: üliõpilased.
+
+Peamine kasutusjuht: üliõpilane soovib kiiresti kontrollida, millal toimub tema järgmine tund, mis ainega on tegemist ja millises ruumis see toimub.
+
+Kasutuskeskkond: eelkõige mobiiltelefon, aga lahendus peab toimima ka arvutis.
+
+Kujunduse eesmärk: muuta tunniplaan selgemaks, kiiremini haaratavaks ja lihtsamini kasutatavaks.
+
+Piirangud: eestikeelne kasutajaliides, TLÜ visuaalse identiteedi järgimine ning ligipääsetavuse põhimõtted.
