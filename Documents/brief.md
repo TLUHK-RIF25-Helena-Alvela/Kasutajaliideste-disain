@@ -1,9 +1,9 @@
 ### Lähteolukord
 
-Praegune kolledži tunniplaan koondab õppetöö ühes kohas, aga kasutaja kogemus on kehv.
+Praegune kolledži tunniplaan koondab õppetöö ühes kohas, aga kasutaja kogemus on kehv. Olemasolev lahendus võimaldab vaadata tunniplaani päeva, nädala ja kuu kaupa ning otsida infot kursuse, aine ja õppejõu järgi.
 
-- **Mis töötab:** Info on olemas (ruumid, õppejõud, kellaajad, aine nimetused).
-- **Mis on segane:** Hierarhia puudub, mobiilivaade on ebamugavalt skrollitav või puudulikult kohanduv. Palju tühja ruumi, samas tekst on väike.
+- **Mis töötab:** Info on olemas (ruumid, õppejõud, kellaajad, aine nimetused). Olemas on erinevad ajavaated ja otsingufilter.
+- **Mis on segane:** Visuaalse hierarhia puudumine ei toeta info lihtsat leidimst, mobiilivaate puhul võib info rohkus ja paigutus muuta ebamugavaks. Palju tühja ruumi, samas tekst on väike ja osa lisainfost ja lühendite selgitustest ei ole esmapilgul nähtavad.
 - **Mis puudub:** Selge "täna ja praegu" fookus, mis tõstaks käimasoleva või järgmise loengu koheselt esile.
 
 ### Kasutajad
@@ -33,7 +33,7 @@ Praegune kolledži tunniplaan koondab õppetöö ühes kohas, aga kasutaja kogem
 ### Põhikasutusjuhtum
 
 **Ülesanne:** Tudeng avab tunniplaani ja leiab kiirelt oma järgmise loengu ja selle toimumise ruumi  
-**Miks:** 80% igapäevasest tunniplaani kasutusest toimub situatsioonis, kus tudengil on vaja kiiresti teada, kuhu ruumi ta järgmisena minema peab.
+**Miks:** Tunniplaani üks peamisi kasutusvajadusi on õppetöö aja ja koha kontrollimine. Eriti oluline on see olukordades, kus kasutajal on vaja infot kiiresti leida, näiteks vahetunnis või enne järgmise loengu algust.
 
 ### Avatud küsimused
 
@@ -41,28 +41,31 @@ Praegune kolledži tunniplaan koondab õppetöö ühes kohas, aga kasutaja kogem
 2. Kas kasutaja vajab vaatesse ka nädala ülevaadet või rippmenüüd teiste päevade valikuks?
 3. Kas kasutaja peab nägema ka teiste kursuste tunniplaani
 4. Kas ruumi järgi filtreerimine on oluline?
+5. Kui mugav on tunniplaani kasutada telefonis?
+6. Kas kõiki funktsioone saab kasutada klaviatuuriga?
+7. Kas kasutaja näeb arusaadavalt, millised filtrid on kasutusel.
 
 ---
 
 ## Väidete tabel
 
-| #   | Väide                                                                                                 | Allikas                            | Liik               | Kuidas täpsustada                                                     |
-| :-- | :---------------------------------------------------------------------------------------------------- | :--------------------------------- | :----------------- | :-------------------------------------------------------------------- |
-| 1   | Tunniplaanis on kirjas ruumi number, kellaaeg ja õppejõu nimi.                                        | Olemasolev tunniplaan (kuvatõmmis) | Allikast teadaolev | –                                                                     |
-| 2   | Tudengid vaatavad tunniplaani peamiselt telefonis.                                                    | oma kogemus                        | Eeldus             | Küsida kursusekaaslaselt                                              |
-| 3   | Tänase päeva tunnid on avavaates esimesena                                                            | Eeldusest tuletatud                | Disainiotsus       | Kontrollida prototüübiga                                              |
-| 4   | Kasutajad vajavad korraga kogu nädala vaadet ühel ekraanil.                                           | AI eeldus (prompti vastusest)      | Eeldus             | Kontrollida, kas mobiilis on päeva vaade parem kui nädala vaade.      |
-| 5   | WCAG 2.2 AA kohaselt peab tekstikontrast taustaga olema vähemalt 4.5:1.                               | WCAG 2.2 Standard                  | Allikast teadaolev | Kontrollida https://webaim.org/resources/contrastchecker/             |
-| 6   | Ruumi number on tudengile vajalikum info kui õppejõu täisnimi.                                        | Vaatlus vahetunnis                 | Eeldus             | Vaadata ja küsida, mis infot tudengid enne klassi sisenemist otsivad. |
-| 7   | Käimasolev loeng tõstatakse esile kontrastsema taustaga.                                              | Kasutajakogemuse hea tava          | Disainiotsus       | Testida prototüübis tajutavust.                                       |
-| 8   | Kasutaja tahab näha ühe näpuvajutusega homset tunniplaani.                                            | Eeldus                             | Eeldus             | Testida lihtsat päevade vahelist navigeerimist (swipe / nupud).       |
-| 9   | Aine kood ei pea olema esmases vaates                                                                 | Eeldusest tuletatud                | Disainiotsus       | Vähendada ainekoodi visuaalset kaalu ja suurendada aine nime.         |
-| 10  | Tunniplaan laeb aeglase mobiilse internetiga alla 2 sekundi.                                          | Kolledži tehniline kontekst        | Allikast teadaolev | Kontrollida brauseri Network tabist teostusfaasis.                    |
-| 11  | AI eeldas, et tudeng soovib näha loengu asukoha kaarti/hoone plaanipilti.                             | AI genereeritud kavand             | Eeldus             | Hinnata, kas see on teostatav või tekitab liigset visuaalset müra.    |
-| 12  | Värvikoodid aitavad tunde kiiremini eristada.                                                         | UI disainipõhimõtted               | Disainiotsus       | Katsetada suundades erinevaid värvilahendusi.                         |
-| 13  | Praegune tunniplaan kuvab liiga palju sekundaarset infot korraga.                                     | Rühma seminarileiud                | Allikast teadaolev | Märkida kuvatõmmisele märkuste lehel (02 References).                 |
-| 14  | Nutiseadme ekraanil peab olulisem info (tänased tunnid) olema nähtav ilma lehte allapoole skrollimata | Android Design Guidelines          | Disainiotsus       | testida erinevatel ekraanisuurustel                                   |
-| 15  | Filtreerimise osa peab olema selgem                                                                   | Rühma seminarileiud                | Allikast teadaolev | Lisada korralik otsinguriba, et ei peaks pikalt scrollima             |
+| #   | Väide                                                                                                 | Allikas                            | Liik               | Kuidas täpsustada                                                                                                      |
+| :-- | :---------------------------------------------------------------------------------------------------- | :--------------------------------- | :----------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| 1   | Tunniplaanis on kirjas ruumi number, kellaaeg ja õppejõu nimi.                                        | Olemasolev tunniplaan (kuvatõmmis) | Allikast teadaolev | –                                                                                                                      |
+| 2   | Tudengid vaatavad tunniplaani peamiselt telefonis.                                                    | oma kogemus                        | Eeldus             | Küsida kursusekaaslaselt                                                                                               |
+| 3   | Tänase päeva tunnid on avavaates esimesena                                                            | Eeldusest tuletatud                | Disainiotsus       | Kontrollida prototüübiga                                                                                               |
+| 4   | Kasutajad vajavad korraga kogu nädala vaadet ühel ekraanil.                                           | Eeldus                             | Eeldus             | Kontrollida, kas mobiilis on päeva vaade parem kui nädala vaade.                                                       |
+| 5   | WCAG nõuded puudulikud                                                                                | WCAG 2.2 Standard                  | Allikast teadaolev | Kontrollida https://webaim.org/resources/contrastchecker/                                                              |
+| 6   | Ruumi number on tudengile vajalikum info kui õppejõu täisnimi.                                        | Vaatlus vahetunnis                 | Eeldus             | Vaadata ja küsida, mis infot tudengid enne klassi sisenemist otsivad.                                                  |
+| 7   | Käimasolev loeng tõstatakse esile kontrastsema taustaga.                                              | Kasutajakogemuse hea tava          | Disainiotsus       | Testida prototüübis tajutavust.                                                                                        |
+| 8   | Kasutaja tahab näha ühe näpuvajutusega homset tunniplaani.                                            | Eeldus                             | Eeldus             | Testida lihtsat päevade vahelist navigeerimist (swipe / nupud).                                                        |
+| 9   | Aine kood ei pea olema esmases vaates                                                                 | Eeldusest tuletatud                | Disainiotsus       | Vähendada ainekoodi visuaalset kaalu ja suurendada aine nime.                                                          |
+| 10  | Värvikoodid aitavad tunde kiiremini eristada.                                                         | UI disainipõhimõtted               | Disainiotsus       | Katsetada suundades erinevaid värvilahendusi.                                                                          |
+| 11  | Praegune tunniplaan kuvab liiga palju sekundaarset infot korraga.                                     | Rühma seminarileiud                | Allikast teadaolev | Märkida kuvatõmmisele märkuste lehel (02 References).                                                                  |
+| 12  | Nutiseadme ekraanil peab olulisem info (tänased tunnid) olema nähtav ilma lehte allapoole skrollimata | Allikast teadaolev                 | Disainiotsus       | mobiilivaates paigutatakse kõige sagedamini vajatav info visuaalselt esiplaanile ning välditakse tarbetut skrollimist. |
+| 13  | Filtreerimise osa peab olema selgem                                                                   | Rühma seminarileiud/Vaatlus        | Allikast teadaolev | Lisada korralik otsinguriba, et ei peaks pikalt scrollima                                                              |
+| 14  | Kuupäeva vahemiku otsingu loogika on keeruline                                                        | Rühma seminarileiud/Vaatlus        | Allikast teadaolev | Funktsionaalsus on kirjeldatud juhendis, aga peaks olema selgemalt arusaadav                                           |
+| 15  | Erialade lühendid ei ole esmakursuslasele ehk arusaadavad ja lühendite selgitused on "peidus"         | Allikast teadaolev/Isiklik kogemus | Disainiotsus       | oluline info peaks olema piisavalt nähtav, mitte peidetud                                                              |
 
 ---
 
@@ -78,3 +81,5 @@ Praegune kolledži tunniplaan koondab õppetöö ühes kohas, aga kasutaja kogem
 
 3. **Teiste ülikoolide tunniplaanid**  
    Viide: Teiste Eesti kõrgkoolide tunniplaanilahendused ja info esituse võrdlus.
+   TalTECH - https://tunniplaan.taltech.ee/#/public
+   AVARA - https://avara.edu.ee/tunniplaan/
