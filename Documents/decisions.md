@@ -1,13 +1,8 @@
-| Kriteerium                                 | A   | B   | C   |
-| ------------------------------------------ | --- | --- | --- |
-| Põhiinfo on kohe leitav (mis, kus, millal) | X   | X   | X   |
-| Hierarhia toetab ülesannet                 | X   | X   | X   |
-| Loetavus ja kontrast                       | X   | X   | X   |
-| Sobib kolledži konteksti                   | X   | X   | X   |
-| On eristuv, mitte vaikimisi AI stiil       | X   | X   | X   |
-| Sisaldab vähe põhjendamata lisasid         | -   | X   | X   |
-
-Suund B muutus veidi detailsemaks. Andis juurde värve ja kujundeid. Kuid üllatavalt sarnased.
+Valisin edasiarendamiseks Suuna A, kuna selle selge ja kõrge kontrastiga "Järgmine tund" kaart lahendab kõige otsemalt tudengi põhikasutusjuhtumi ehk kiire infovajaduse järgmise tunni kohta.
+Suund A-s on visuaalne hierarhia paigas. Käimasolev või järgmine loeng on koheselt esil ning järgnevad tunnid jäävad veidi tahaplaanile.
+Suunast B võtan kaasa rohelise värvi, erinevad ajavaated.
+Disainiotsusena võin välja tuua, et mobiilivaates on esimesena nähtavale vaid täna ja praegu oluline sisu. Selline lahendus sobita täiuslikult Haapsalu kolledži kaasaegse identiteediga ja vähendab tudengi hommikust stressi.
+Värvidega peab veel veidi katsetama. Kindlasti tahan HK rohelist veidi kasutada.
 
 ## 2026-11-12 – Päevavaade on avavaade
 
