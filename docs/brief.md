@@ -102,3 +102,4 @@ Loome valitud suunal 12. novembri RIF2 õppekava tunniplaani päevavaate.
    Viide: Teiste Eesti kõrgkoolide tunniplaanilahendused ja info esituse võrdlus.
    TalTECH - https://tunniplaan.taltech.ee/#/public
    AVARA - https://avara.edu.ee/tunniplaan/
+4. TLU HK tunniplaani kuvatõmmised minu Figams - https://www.figma.com/design/NyhcnRRWZcO9afyvJfg2Wk/HK-tunniplaan?node-id=1-2&p=f&t=VpyIZifrB1K7Gf7c-0
