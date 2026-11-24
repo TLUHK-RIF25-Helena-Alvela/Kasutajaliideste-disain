@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Minu tunniplaan – disainitokenid
+   Allikas: Figma fail „Tunniplaan – Süsteem“ (Local variables).
+   Nimed vastavad Figma muutujatele: kaldkriips → sidekriips,
+   värvidel eesliide "color-" (nt text/primary → --color-text-primary).
+   Kujundus ja komponendid kasutavad AINULT semantilisi tokeneid,
+   primitiive kasutavad ainult tokenid.
+   ========================================================================== */
+
+:root {
+  /* --- Color Primitives ------------------------------------------------- */
+  --color-red-600: #d0043c;
+  --color-red-800: #b20e10;
+  --color-green-400: #a4d65e;
+  --color-gray-50: #f3f6f9;
+  --color-gray-100: #e4eaf0;
+  --color-gray-400: #9aa4a6;
+  --color-gray-600: #5b6566;
+  --color-gray-800: #3c4445;
+  --color-white: #ffffff;
+
+  /* --- Color Tokens (Light) --------------------------------------------- */
+  --color-surface-page: var(--color-gray-100);
+  --color-surface-card: var(--color-white);
+  --color-surface-card-muted: var(--color-gray-50);
+
+  --color-text-primary: var(--color-gray-800);
+  --color-text-secondary: var(--color-gray-600);
+  --color-text-accent: var(--color-red-600);
+  --color-text-on-action: var(--color-white);
+
+  --color-action-primary: var(--color-red-600);
+  --color-action-primary-hover: var(--color-red-800);
+  --color-action-secondary: var(--color-gray-100);
+
+  --color-border-accent: var(--color-red-600);
+  --color-border-default: var(--color-gray-800);
+  --color-border-subtle: var(--color-gray-400);
+
+  --color-status-today: var(--color-green-400);
+
+  /* --- Typography Primitives -------------------------------------------- */
+  --font-family-base: "Inter", system-ui, sans-serif;
+
+  --font-size-xs: 0.75rem;   /* 12 */
+  --font-size-sm: 0.875rem;  /* 14 */
+  --font-size-base: 1rem;    /* 16 */
+  --font-size-lg: 1.25rem;   /* 20 */
+  --font-size-xl: 1.5rem;    /* 24 */
+  --font-size-2xl: 2rem;     /* 32 */
+  --font-size-3xl: 3rem;     /* 48 */
+
+  --font-weight-regular: 400;  /* Figma: Regular */
+  --font-weight-semibold: 600; /* Figma: Semi Bold */
+  --font-weight-bold: 700;     /* Figma: Bold */
+
+  /* --- Typography Tokens (Desktop) -------------------------------------- */
+  --heading-font-family: var(--font-family-base);
+  --body-font-family: var(--font-family-base);
+
+  --display-size: var(--font-size-3xl);   /* 48 */
+  --headline-size: var(--font-size-2xl);  /* 32 */
+  --title-size: var(--font-size-xl);      /* 24 */
+  --body-size-md: var(--font-size-base);  /* 16 */
+  --body-size-sm: var(--font-size-sm);    /* 14 */
+  --label-size: var(--font-size-sm);      /* 14 */
+
+  --heading-weight: var(--font-weight-bold);
+  --body-weight: var(--font-weight-regular);
+  --body-weight-strong: var(--font-weight-semibold);
+  --label-weight: var(--font-weight-semibold);
+
+  /* Reavahed tekstistiilidest (Figmas stiili osa, mitte muutuja) */
+  --line-height-heading: 1.2; /* Display, Headline, Title, Label */
+  --line-height-body: 1.4;    /* Body/md, Body/md-strong, Body/sm */
+
+  /* --- Spacing (space-N = N × 4 px) ------------------------------------- */
+  --space-1: 0.25rem; /* 4 */
+  --space-2: 0.5rem;  /* 8 */
+  --space-3: 0.75rem; /* 12 */
+  --space-4: 1rem;    /* 16 */
+  --space-5: 1.25rem; /* 20 */
+  --space-6: 1.5rem;  /* 24 */
+  --space-8: 2rem;    /* 32 */
+
+  /* --- Radius ----------------------------------------------------------- */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 999px;
+}
+
+/* --- Typography Tokens (Mobile): muutuvad ainult viited ------------------ */
+@media (max-width: 40em) {
+  :root {
+    --display-size: var(--font-size-2xl);  /* 32 */
+    --headline-size: var(--font-size-lg);  /* 20 */
+    --title-size: var(--font-size-lg);     /* 20 */
+    --label-size: var(--font-size-xs);     /* 12 */
+  }
+}
+
+/* --- Tekstistiilid klassidena (Figma: Display/md, Body/sm jne) ----------- */
+.text-display-md  { font-family: var(--heading-font-family); font-size: var(--display-size);  font-weight: var(--heading-weight);     line-height: var(--line-height-heading); }
+.text-headline-md { font-family: var(--heading-font-family); font-size: var(--headline-size); font-weight: var(--heading-weight);     line-height: var(--line-height-heading); }
+.text-title-md    { font-family: var(--heading-font-family); font-size: var(--title-size);    font-weight: var(--heading-weight);     line-height: var(--line-height-heading); }
+.text-body-md     { font-family: var(--body-font-family);    font-size: var(--body-size-md);  font-weight: var(--body-weight);        line-height: var(--line-height-body); }
+.text-body-md-strong { font-family: var(--body-font-family); font-size: var(--body-size-md);  font-weight: var(--body-weight-strong); line-height: var(--line-height-body); }
+.text-body-sm     { font-family: var(--body-font-family);    font-size: var(--body-size-sm);  font-weight: var(--body-weight);        line-height: var(--line-height-body); }
+.text-label-md    { font-family: var(--body-font-family);    font-size: var(--label-size);    font-weight: var(--label-weight);       line-height: var(--line-height-heading); }
