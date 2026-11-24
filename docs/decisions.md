@@ -1,8 +1,16 @@
-Valisin edasiarendamiseks Suuna A, kuna selle selge ja kõrge kontrastiga "Järgmine tund" kaart lahendab kõige otsemalt tudengi põhikasutusjuhtumi ehk kiire infovajaduse järgmise tunni kohta.
-Suund A-s on visuaalne hierarhia paigas. Käimasolev või järgmine loeng on koheselt esil ning järgnevad tunnid jäävad veidi tahaplaanile.
-Suunast B võtan kaasa rohelise värvi, erinevad ajavaated.
-Disainiotsusena võin välja tuua, et mobiilivaates on esimesena nähtavale vaid täna ja praegu oluline sisu. Selline lahendus sobita täiuslikult Haapsalu kolledži kaasaegse identiteediga ja vähendab tudengi hommikust stressi.
-Värvidega peab veel veidi katsetama. Kindlasti tahan HK rohelist veidi kasutada.
+# Otsused
+
+Esialgu valisin edasiarendamiseks algselt Suuna A, kuna selle selge ja kõrge kontrastiga "Järgmine tund" kaart lahendab kõige otsemalt tudengi põhikasutusjuhtumi ehk kiire infovajaduse järgmise tunni kohta. Kuid süsteemi luues tundsin siiski, et suund B täidab eesmärki paremini. Sisult olid suunad sarnased. Mõlemad tegi Claude sama lähteülesande ja andmete põhjal.
+Suund B-s on visuaalne hierarhia paigas. Käimasolev või järgmine loeng on koheselt esil ning järgnevad tunnid jäävad veidi tahaplaanile.
+Suund B on rahulik ja selge. Punane on ainult kellaaeg, mitte nagu suunas A, kus on terve kaart punane. See seostub paremini moodboardil välja toodud märksõnaaga "rahulik".
+
+Disainiotsusena võin välja tuua, et mobiilivaates on esimesena nähtavale vaid täna ja praegu oluline sisu. Selline lahendus sobitub täiuslikult Haapsalu kolledži kaasaegse identiteediga ja vähendab tudengi hommikust stressi.
+Värvidega peab veel veidi katsetama. Kindlasti tahan HK rohelist veidi kasutada, mida B suunas saab kenasti teha, et ei muutuks liialt häirivaks.
+
+Suunas A oli tundinde vahel märgitud ka vahetunni aeg. Suunda B ma seda hetkel sisse ei pannud. Eeldus, et kasutaja suudab selle ise välja mõelda.
+
+
+## Vanad otsused, mis ei kehti. 
 
 ## 2026-11-12 – Päevavaade on avavaade
 
@@ -52,3 +60,62 @@ Värvidega peab veel veidi katsetama. Kindlasti tahan HK rohelist veidi kasutada
 **Põhjus:** põhikasutus on telefonis portrait-vaates; järgmine tund peab olema nähtav ilma kerimata.
 **Alternatiivid:** eraldi mobiili- ja arvutivaade.
 **Allikas või eeldus:** brief „Kasutusolukorrad"; suuna A mobiili- ja arvutikavand.
+
+## 2026-11-23 – Navigeerimine
+
+**Otsus:** Lisan siiski vaated Täna/Homme/Nädal/Kuu.
+**Põhjus:** õpilane leiab need samast kohast kus vanas tunniplaanis harjunud.
+**Alternatiivid:** dropdown näiteks.
+**Allikas või eeldus:** suund B eelvaade.
+
+## 2026-11-23 – puuduva info eristamine
+
+**Otsus:** Kui ruum( või muu info) pole märgitud, siis on eraldi silt katkendjoonega.
+**Põhjus:** Info eristamine paremini ja selgemalt.
+**Alternatiivid:** Suunas A oli puuduv ruum lihtsalt tekts.
+**Allikas või eeldus:** Info selgus ja eristatavus.
+
+## Lõplikud otsused:
+
+- Värvid:
+  Tulevad moodboardist ja TLÜ enda visuaalsest identiteedist. Punane on rõhuvärv, roheline "täna" sildile, heledam hall taustaks ja tumedam hall põhi kirjaks. Üldpilt peaks jääma rahulik ja neutraalne.
+
+- Font:
+  Inter - kuna see on hästi loetav, neutraalne ja klassikaline ning toetab täpitähti. Üks font kogu lehel. Suurus ja kaalud lisavad hierarhia.
+
+- Tüpograafia skaala:
+  12 / 14 / 16 / 20 / 24 / 32 / 48 – klassikaline skaala, mille astmed on selgelt eristuvad.
+
+- Desktopi ja mobiili moodid:
+  kuna destopil olev 48ps kellaajana ei mahu mobiililaiusele.
+
+- label/size mobiilis 12 px:
+  mobiilis on mõned nupud ja stiilid kompaktsemad.
+
+- Tume teema puudub:
+  Kuna oli valikuline, siis keskendusin nõutud osadele.
+
+-Ruum tunniplaanis:
+12.11 tunniplaanis oli ruumi veerg tühi, seega näitab põhivaade „Ruum märkimata“ ja room-tag varianti room=missing. Komponendi näidistekstiks jätsin „Ruum 205“, sest enamasti on ruumid tunniplaanis märgitud. Märkimata ruumi kuvab katkendliku joonega.
+
+- Pika teksti test:
+  Testis tuli välja, et pika teksti puhul murdub nimetus poole sõna pealt. Muutsin tokeni fonti 24 pealt 20 px peale.
+  - Kustutasin failid timetable.js ja main.js
+    Selles kodutöös on põhivaade staatiline (RIF 2, 12.11) ja seetõttu kellaajast sõltuv järgmise tunni arvutus ,mis eelmises kodutöös sai sisse pandud jäeti välja, sest kodutöö fookus on disainisüsteem.
+
+##Kasutatud AI tööriistad:
+
+- Claude artefakt, mis lõi suuna esialgsed kavandid
+- Claude + Figma plugin, mis sai muuta otse Figma faile.
+- Claude Code lõi index.html.
+
+1. Claude tegi kavandi.
+   Mina andsin ette moodboardi, märksõnad, värvid (TLÜ CVI), fondi valik.
+
+2. Lõin ise primitiivid ja tokenid. Claude kontrollis nimetused üle ja lisas enamus muutujatele code syntax. Mõned tegin alguses ise, et teada, kuidas see käib.
+
+3. Direction failis AI korrastas paigutuse, parandas märkuseid ja lasin lisada logo ploki, mille andsin ette TLÜ lehelt.
+
+4. Foundation lehel korrastas AI samuti paigutust ja märkuseid.
+
+5. Pooled komponendid tegin ise harjutamise mõtttes, pooled tegi AI.

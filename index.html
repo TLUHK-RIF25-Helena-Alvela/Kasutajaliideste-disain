@@ -2,102 +2,134 @@
 <html lang="et">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tunniplaan – TLÜ Haapsalu kolledž</title>
+    <title>Minu tunniplaan – 12. november 2026 – TLÜ Haapsalu kolledž</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
+    <link rel="stylesheet" href="src/styles/tokens.css" />
+    <link rel="stylesheet" href="src/styles/main.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="site-header__inner">
-        <div class="site-header__brand">
-          <p class="site-header__org">TLÜ Haapsalu kolledž</p>
-          <h1 class="site-header__title">Tunniplaan</h1>
-        </div>
-
-        <p class="site-header__date">
-          <time class="site-header__day" data-field="day"></time>
-          <span class="site-header__meta" data-field="day-meta"></span>
-        </p>
-
-        <p class="group-badge">
-          <span class="visually-hidden">Rühm: </span>
-          <span data-field="group"></span>
-        </p>
+    <header class="header">
+      <div class="header__brand">
+        <p class="header__school">Tallinna Ülikooli Haapsalu kolledž</p>
+        <h1 class="header__title">Minu tunniplaan</h1>
       </div>
+
+      <button class="group-select" type="button" aria-label="Rühm: RIF 2">
+        <span><span class="group-select__prefix">Rühm: </span>RIF 2</span>
+        <svg class="group-select__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M6 9L12 15L18 9" />
+        </svg>
+      </button>
+
+      <!-- Two date-nav instances, as in Figma: only one is displayed per layout. -->
+      <div class="date-nav header__date-nav" role="group" aria-label="Kuupäev">
+        <button class="icon-button date-nav__prev" type="button" aria-label="Eelmine päev">
+          <svg class="icon-button__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M12.5 15L7.5 10L12.5 5" />
+          </svg>
+        </button>
+        <p class="date-nav__date">
+          <time class="date-nav__day" datetime="2026-11-12">Neljapäev, 12. november</time>
+          <span class="date-nav__week">46. nädal</span>
+        </p>
+        <button class="icon-button date-nav__next" type="button" aria-label="Järgmine päev">
+          <svg class="icon-button__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M7.5 15L12.5 10L7.5 5" />
+          </svg>
+        </button>
+      </div>
+
+      <nav class="view-tabs" aria-label="Vaade">
+        <button class="view-tab view-tab--active" type="button" aria-current="page">Täna</button>
+        <button class="view-tab" type="button">Homme</button>
+        <button class="view-tab" type="button">Nädal</button>
+        <button class="view-tab" type="button">Kuu</button>
+      </nav>
     </header>
 
-    <main class="layout">
-      <section class="next-lesson" aria-labelledby="next-lesson-label">
-        <h2 class="next-lesson__label" id="next-lesson-label" data-field="label">Järgmine tund</h2>
+    <main class="main">
+      <div class="date-nav main__date-nav" role="group" aria-label="Kuupäev">
+        <button class="icon-button date-nav__prev" type="button" aria-label="Eelmine päev">
+          <svg class="icon-button__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M12.5 15L7.5 10L12.5 5" />
+          </svg>
+        </button>
+        <p class="date-nav__date">
+          <time class="date-nav__day" datetime="2026-11-12">Neljapäev, 12. november</time>
+          <span class="date-nav__week">46. nädal</span>
+        </p>
+        <button class="icon-button date-nav__next" type="button" aria-label="Järgmine päev">
+          <svg class="icon-button__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M7.5 15L12.5 10L7.5 5" />
+          </svg>
+        </button>
+      </div>
 
-        <div class="next-lesson__content" data-field="content">
-          <p class="next-lesson__time">
-            <time class="next-lesson__start" data-field="start"></time>
-            <span class="next-lesson__end">kuni <time data-field="end"></time></span>
-          </p>
-          <p class="next-lesson__title" data-field="title"></p>
-
-          <dl class="next-lesson__details">
-            <div class="next-lesson__detail">
-              <dt>
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" />
-                  <circle cx="12" cy="9.5" r="2.5" />
-                </svg>
-                Ruum:
-              </dt>
-              <dd data-field="room"></dd>
-            </div>
-            <div class="next-lesson__detail">
-              <dt>
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <circle cx="12" cy="8" r="4" />
-                  <path d="M4 21a8 8 0 0 1 16 0" />
-                </svg>
-                <span class="visually-hidden">Õppejõud:</span>
-              </dt>
-              <dd data-field="teacher"></dd>
-            </div>
-          </dl>
-        </div>
-
-        <p class="next-lesson__empty" data-field="empty" hidden></p>
-      </section>
-
-      <section class="day-lessons" aria-labelledby="day-lessons-title">
-        <h2 class="day-lessons__title" id="day-lessons-title">
-          Päeva tunnid <span class="day-lessons__count" data-field="count"></span>
-        </h2>
-        <ol class="lesson-list" data-field="lesson-list"></ol>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p data-field="program"></p>
-    </footer>
-
-    <template id="lesson-template">
-      <li class="lesson-list__item">
-        <p class="lesson-break" data-field="break" hidden></p>
-        <article class="lesson">
-          <p class="lesson__time">
-            <time class="lesson__start" data-field="start"></time>
-            <span class="visually-hidden">kuni</span>
-            <time class="lesson__end" data-field="end"></time>
-          </p>
-          <div class="lesson__body">
-            <p class="lesson__status" data-field="status" hidden></p>
-            <h3 class="lesson__title" data-field="title"></h3>
-            <p class="lesson__meta">
-              <span data-field="room"></span>
-              <span aria-hidden="true">·</span>
-              <span data-field="teacher"></span>
+      <div class="main__content">
+        <section class="next-lesson-card" aria-labelledby="next-lesson-title">
+          <div class="next-lesson-card__head">
+            <h2 class="next-lesson-card__label" id="next-lesson-title">Järgmine tund</h2>
+            <span class="badge">Täna</span>
+          </div>
+          <div class="next-lesson-card__main">
+            <p class="next-lesson-card__time">
+              <time datetime="2026-11-12T10:00">10:00</time> – <time datetime="2026-11-12T13:15">13:15</time>
+            </p>
+            <h3 class="next-lesson-card__name">Veebiraamistike rakendamine</h3>
+            <p class="next-lesson-card__code">HKI5122.HK</p>
+          </div>
+          <div class="next-lesson-card__details">
+            <p class="next-lesson-card__room">
+              <svg class="next-lesson-card__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M16.6667 8.33333C16.6667 13.3333 10 18.3333 10 18.3333C10 18.3333 3.33333 13.3333 3.33333 8.33333C3.33333 6.56522 4.03571 4.86953 5.28595 3.61929C6.5362 2.36905 8.23189 1.66667 10 1.66667C11.7681 1.66667 13.4638 2.36905 14.714 3.61929C15.9643 4.86953 16.6667 6.56522 16.6667 8.33333Z" />
+                <path d="M12.5 8.33333C12.5 9.71404 11.3807 10.8333 10 10.8333C8.61929 10.8333 7.5 9.71404 7.5 8.33333C7.5 6.95262 8.61929 5.83333 10 5.83333C11.3807 5.83333 12.5 6.95262 12.5 8.33333Z" />
+              </svg>
+              <span class="next-lesson-card__room-label">Ruum</span>
+              <span class="room-tag room-tag--missing">tunniplaanis märkimata</span>
+            </p>
+            <p class="next-lesson-card__teacher">
+              <svg class="next-lesson-card__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M13.3333 6.66667C13.3333 8.50762 11.8409 10 10 10C8.15905 10 6.66667 8.50762 6.66667 6.66667C6.66667 4.82572 8.15905 3.33333 10 3.33333C11.8409 3.33333 13.3333 4.82572 13.3333 6.66667Z" />
+                <path d="M3.33333 17.5C3.33333 15.7319 4.03571 14.0362 5.28595 12.786C6.5362 11.5357 8.23189 10.8333 10 10.8333C11.7681 10.8333 13.4638 11.5357 14.714 12.786C15.9643 14.0362 16.6667 15.7319 16.6667 17.5" />
+              </svg>
+              <span>Juho Kalberg</span>
             </p>
           </div>
-        </article>
-      </li>
-    </template>
+        </section>
 
-    <script type="module" src="/src/main.js"></script>
+        <section class="day-list" aria-labelledby="day-list-title">
+          <div class="day-list__head">
+            <h2 class="day-list__title" id="day-list-title">Tänased tunnid</h2>
+            <p class="day-list__count">2 tundi</p>
+          </div>
+          <ol class="day-list__items" role="list">
+            <li class="lesson-row lesson-row--next">
+              <p class="lesson-row__time">
+                <time class="lesson-row__start" datetime="2026-11-12T10:00">10:00</time>
+                <time class="lesson-row__end" datetime="2026-11-12T13:15">13:15</time>
+              </p>
+              <div class="lesson-row__content">
+                <h3 class="lesson-row__name">Veebiraamistike rakendamine</h3>
+                <p class="lesson-row__meta"><span class="lesson-row__code">HKI5122.HK · </span>Ruum märkimata · Juho Kalberg</p>
+              </div>
+            </li>
+            <li class="lesson-row">
+              <p class="lesson-row__time">
+                <time class="lesson-row__start" datetime="2026-11-12T14:15">14:15</time>
+                <time class="lesson-row__end" datetime="2026-11-12T17:30">17:30</time>
+              </p>
+              <div class="lesson-row__content">
+                <h3 class="lesson-row__name">Kasutajaliidese disain</h3>
+                <p class="lesson-row__meta"><span class="lesson-row__code">HKI5120.HK · </span>Ruum märkimata · Juho Kalberg</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
