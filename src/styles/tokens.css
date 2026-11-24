@@ -91,7 +91,7 @@
 }
 
 /* --- Typography Tokens (Mobile): muutuvad ainult viited ------------------ */
-@media (max-width: 40em) {
+@media (width < 40em) {
   :root {
     --display-size: var(--font-size-2xl);  /* 32 */
     --headline-size: var(--font-size-lg);  /* 20 */

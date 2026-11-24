@@ -9,6 +9,9 @@ Värvidega peab veel veidi katsetama. Kindlasti tahan HK rohelist veidi kasutada
 
 Suunas A oli tundinde vahel märgitud ka vahetunni aeg. Suunda B ma seda hetkel sisse ei pannud. Eeldus, et kasutaja suudab selle ise välja mõelda.
 
+
+## Vanad otsused, mis ei kehti. 
+
 ## 2026-11-12 – Päevavaade on avavaade
 
 **Otsus:** avavaates on tänane päev, nädalavaade on teisel tasandil.
@@ -97,11 +100,14 @@ Suunas A oli tundinde vahel märgitud ka vahetunni aeg. Suunda B ma seda hetkel 
 
 - Pika teksti test:
   Testis tuli välja, et pika teksti puhul murdub nimetus poole sõna pealt. Muutsin tokeni fonti 24 pealt 20 px peale.
+  - Kustutasin failid timetable.js ja main.js
+    Selles kodutöös on põhivaade staatiline (RIF 2, 12.11) ja seetõttu kellaajast sõltuv järgmise tunni arvutus ,mis eelmises kodutöös sai sisse pandud jäeti välja, sest kodutöö fookus on disainisüsteem.
 
 ##Kasutatud AI tööriistad:
 
 - Claude artefakt, mis lõi suuna esialgsed kavandid
 - Claude + Figma plugin, mis sai muuta otse Figma faile.
+- Claude Code lõi index.html.
 
 1. Claude tegi kavandi.
    Mina andsin ette moodboardi, märksõnad, värvid (TLÜ CVI), fondi valik.

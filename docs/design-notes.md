@@ -1,6 +1,9 @@
+
+
 # Minu disainimõtted
 
-> **Mis on oluline nii kasutajaliidest looma hakates kui ka seda luues?**
+
+ **Mis on oluline nii kasutajaliidest looma hakates kui ka seda luues?**
 
 See on minu arenev vastus kursuse läbivale küsimusele. Täiendan seda pärast iga seminari ja kodutööd. Vanu punkte ei kustuta – kui mõte muutub, märgin selle alla "Mis muutus".
 
@@ -50,12 +53,12 @@ Probleem tuleb defineerida täpselt ja sellest lähtuda.
 
 ## Mis muutus
 
-| Millal   | Mis muutus                                                                                | Miks                                                                                                                                                                                                                        |
-| -------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| KOdutöös | Mida tähendab kasutaja jaoks lihtsus?                                                     | See ei pruugi olla ainult vähe elemente ja minimalistlik. Loogiline paigutus ja tegevuste arusaadavus on veel olulisemad.                                                                                                   |
-| Kodutöös | Algul valisin plaani A, aga disainisuunda süsteemiks luues leidsin, et B on siiski parem. | Plaanis A oli tänane vaade punane, mis tundus algul hea, kuid rohkem töötades hakkas see pigem häirima ja muutus liialt pealetükkivaks. Lisaks on plaanis B ka valikud päeva, nädala ja kuu vaateks, mis on siiski oluline. |
-|          |                                                                                           |                                                                                                                                                                                                                             |
-|          |                                                                                           |                                                                                                                                                                                                                             |
-|          |                                                                                           |                                                                                                                                                                                                                             |
-|          |                                                                                           |                                                                                                                                                                                                                             |
-|          |                                                                                           |                                                                                                                                                                                                                             |
+| Millal                  | Mis muutus                                                                                | Miks                                                                                                                                                                                                                        |
+| ----------------------- | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| KOdutöös                | Mida tähendab kasutaja jaoks lihtsus?                                                     | See ei pruugi olla ainult vähe elemente ja minimalistlik. Loogiline paigutus ja tegevuste arusaadavus on veel olulisemad.                                                                                                   |
+| Kodutöös                | Algul valisin plaani A, aga disainisuunda süsteemiks luues leidsin, et B on siiski parem. | Plaanis A oli tänane vaade punane, mis tundus algul hea, kuid rohkem töötades hakkas see pigem häirima ja muutus liialt pealetükkivaks. Lisaks on plaanis B ka valikud päeva, nädala ja kuu vaateks, mis on siiski oluline. |
+| Vaatenupu külje padding | kood leidis vea, mida Figma ei näidanud                                                   | kodutöö                                                                                                                                                                                                                     |
+|                         |                                                                                           |                                                                                                                                                                                                                             |
+|                         |                                                                                           |                                                                                                                                                                                                                             |
+|                         |                                                                                           |                                                                                                                                                                                                                             |
+|                         |                                                                                           |                                                                                                                                                                                                                             |
